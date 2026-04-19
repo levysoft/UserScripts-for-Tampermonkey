@@ -17,7 +17,7 @@ This script improves the reading of comments on Hacker News by highlighting link
 After installation, navigate to [Hacker News](https://news.ycombinator.com/) and open any comment thread. You'll notice that all links are now highlighted not only to stand out but also to indicate their source domain at a glance, and clicking on them will open the content in a new tab.
 
 ### Hacker News Add Links Upvoted
-**File**: `hacker-news-add-links-upvoted-1.0.user.js`
+**File**: `userscripts/hacker-news-add-links-upvoted-1.0.user.js`
 This script adds links for upvoted submissions and comments directly in the header, using the logged-in account's username.
 
 After installation, navigate to [Hacker News](https://news.ycombinator.com/) and quick links to your upvoted submissions ("↑ subs") and comments ("↑ comms") will be added to the header, based on the logged-in username. This new feature allows for faster navigation to content you've interacted with.
