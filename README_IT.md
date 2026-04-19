@@ -17,10 +17,31 @@ Questo script migliora la lettura dei commenti su Hacker News evidenziando i lin
 Dopo l'installazione, naviga su [Hacker News](https://news.ycombinator.com/) e apri qualsiasi thread di commenti. Noterai che tutti i link sono ora evidenziati non solo per risaltare, ma anche per indicare il loro dominio di origine a colpo d'occhio, e cliccandoci sopra il contenuto si aprirà in una nuova scheda.
 
 ### Hacker News Add Links Upvoted
-**File**: `hacker-news-add-links-upvoted-1.0.user.js`
+**File**: `userscripts/hacker-news-add-links-upvoted-1.0.user.js`
 Questo script integra i link per le submission e i commenti votati direttamente nell'intestazione, utilizzando il nome utente dell'account loggato.
 
 Dopo l'installazione, naviga su [Hacker News](https://news.ycombinator.com/) e nel header verranno aggiunti i link rapidi alle tue submission votate ("↑ subs") e ai commenti votati ("↑ comms"), basati sul nome utente loggato. Questa nuova funzionalità permette una navigazione più veloce verso i contenuti con cui hai interagito.
+
+### Hacker News Keyboard Navigation
+**File**: `userscripts/hacker-news-keyboard-navigation-1.0.user.js`
+
+Questo script aggiunge la navigazione da tastiera in stile Reddit ai thread di commenti di Hacker News. Permette di scorrere i commenti senza usare il mouse, con tasti dedicati per muoversi tra tutti i commenti oppure per saltare tra thread allo stesso livello.
+
+Basato sullo script originale di [yorickvP](https://gist.github.com/yorickvP/c5f38322867440ea1774594c59ece3a2), con i seguenti miglioramenti:
+
+- Corretto il bug per cui la navigazione per livello (`n`/`p`) non funzionava quando nessun commento era ancora selezionato: aggiunto il fallback che seleziona il primo commento, coerente con il comportamento di `j`/`k`
+- Rinominata la navigazione per livello da `J`/`K` a `n`/`p` (più intuitivo: **n**ext / **p**revious)
+- Tutti i tasti funzionano indipendentemente da Caps Lock o Shift: `j`/`J`, `k`/`K`, `n`/`N`, `p`/`P`, `v`/`V`
+
+**Tasti disponibili:**
+
+| Tasto | Azione |
+|-------|--------|
+| `j` / `k` | Commento successivo / precedente (tutti i livelli) |
+| `n` / `p` | Commento successivo / precedente allo stesso livello |
+| `Enter` | Espandi / comprimi il commento corrente |
+| `v` | Apri il link dell'articolo in una nuova scheda |
+| `Escape` | Deseleziona il commento corrente |
 
 ## Compatibilità e Installazione
 
