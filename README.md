@@ -22,6 +22,27 @@ This script adds links for upvoted submissions and comments directly in the head
 
 After installation, navigate to [Hacker News](https://news.ycombinator.com/) and quick links to your upvoted submissions ("↑ subs") and comments ("↑ comms") will be added to the header, based on the logged-in username. This new feature allows for faster navigation to content you've interacted with.
 
+### Hacker News Keyboard Navigation
+**File**: `userscripts/hacker-news-keyboard-navigation-1.0.user.js`
+
+This script adds Reddit-style keyboard navigation to Hacker News comment threads. It allows browsing comments without using the mouse, with dedicated keys to move through all comments or jump between threads at the same level.
+
+Based on the original script by [yorickvP](https://gist.github.com/yorickvP/c5f38322867440ea1774594c59ece3a2), with the following improvements:
+
+- Fixed same-level navigation (`n`/`p`) not working when no comment was selected yet: added fallback to select the first comment, consistent with `j`/`k` behavior
+- Renamed same-level navigation from `J`/`K` to `n`/`p` (more intuitive: **n**ext / **p**revious)
+- All keybindings now work regardless of Caps Lock or Shift: `j`/`J`, `k`/`K`, `n`/`N`, `p`/`P`, `v`/`V`
+
+**Keybindings:**
+
+| Key | Action |
+|-----|--------|
+| `j` / `k` | Next / previous comment (all levels) |
+| `n` / `p` | Next / previous comment at the same level |
+| `Enter` | Collapse / expand current comment |
+| `v` | Open article URL in new tab |
+| `Escape` | Deselect current comment |
+
 ## Compatibility and Installation
 
 These scripts have been designed to be compatible with both **Tampermonkey** and **Greasemonkey**, thus providing a wide range of options for users of different browsers. However, given the greater versatility and availability on multiple platforms, we recommend using **Tampermonkey** for a better user experience as it is available for Chrome, Firefox, Safari, and other modern browsers. For iOS users, the **Userscripts** app is available
