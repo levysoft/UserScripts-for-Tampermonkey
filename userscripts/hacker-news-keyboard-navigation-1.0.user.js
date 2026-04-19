@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         HN Keyboard Navigation
+// @name         Hacker News Keyboard Navigation
 // @namespace    https://github.com/levysoft
 // @version      1.0
 // @description  Reddit-style keyboard navigation for Hacker News comments. Based on https://gist.github.com/yorickvP/c5f38322867440ea1774594c59ece3a2
